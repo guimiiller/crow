@@ -45,7 +45,7 @@ body, html {
 }
 .pagination-container button {
     display: block;
-    margin: 109px 0;
+    margin: 90px 0 0 0;
     padding: 10px 20px;
     background: transparent;
     color: var(--color-white);
@@ -248,6 +248,7 @@ body, html {
     justify-content: center;
     max-width: 1193px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 
@@ -453,6 +454,7 @@ form button:hover{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 
@@ -544,4 +546,34 @@ form button:hover{
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* Barra de Rolagem */
+
+
+/* Fundo que corre */
+::-webkit-scrollbar-track {
+    background-color: #14161D;
+  }
+  /* Fundo que corre */
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+    background: #212529;
+  }
+  
+  /* Linha que desce */
+  ::-webkit-scrollbar-thumb {
+    background: #212529;
+    border-radius: 5px;
+  }
+  /* Linha que desce*/
+  
+  
+  /* Barra de Rolagem */
+
+  @media(max-width: 768px) {
+    ::-webkit-scrollbar {
+        display: none; 
+    }
 }
