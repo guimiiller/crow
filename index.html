@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/png"> 
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>CROW</title>
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+        <img src="/images/CrowLogoHeader.png" alt="">
+    </div>
+    <div class="pagination-container">
+        <button data-slide="1">01</button>
+        <button data-slide="2">02</button>
+        <button data-slide="3">03</button>
+        <button data-slide="4">04</button>
+    </div>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide banner-1">
+                <div class="menu-container">
+                    <div class="menu-links left">
+                        <a href="#about" class="menu-link">SOBRE</a>
+                        <a href="#projects" class="menu-link">PROJETOS</a>
+                    </div>
+                    <div class="menu-button" onclick="toggleMenu()">
+                        <img src="./images/CrowLogoHeader.png" alt="Menu Button" >
+                    </div>
+                    <div class="menu-links right">
+                        <a href="#tech" class="menu-link">TECNOLOGIAS</a>
+                        <a href="#contact" class="menu-link">CONTATO</a>
+                    </div>
+                </div>
+                <div class="crow-banner">
+                    <img src="./images/CrowLogoBanner.png" alt="" data-anime>
+                </div>
+                <div class="crow-banner-icons">
+                    <img src="./images/icons/CrowXIcon.png" alt="" data-anime>
+                    <img src="./images/icons/CrowLinkeIcon.png" alt="" data-anime>
+                    <img src="./images/icons/CrowInstaIcon.png" alt="" data-anime>
+                </div>
+            </div>
+            <div class="swiper-slide banner-2" id="about">
+                <div class="menu-banner-2"><img src="./images/CrowLogoBanner.png" alt=""></div>
+
+                <div class="crow-banner-2">
+                    <div class="crow-content-2">
+                        <img src="./images/CrowLogoHeader.png" alt="" data-anime>
+                        <p data-anime>NA CROW, COMBINAMOS CRIATIVIDADE E TECNOLOGIA PARA CRIAR SITES ÚNICOS E INOVADORES QUE ELEVAM SUA MARCA NO AMBIENTE DIGITAL. NOSSA EQUIPE DEDICADA DE DESIGNERS E DESENVOLVEDORES TRABALHA DE FORMA COLABORATIVA PARA OFERECER SOLUÇÕES PERSONALIZADAS QUE NÃO APENAS IMPRESSIONAM VISUALMENTE, MAS TAMBÉM SÃO FUNCIONAIS E OTIMIZADAS PARA SEO, GARANTINDO UMA PRESENÇA ONLINE ROBUSTA E EFICAZ.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide banner-3" id="projects">
+                <div class="menu-banner-3"><img src="./images/CrowLogoBanner.png" alt=""></div>
+
+                <div class="crow-banner-3">
+                    <div class="crow-content-3">
+                        <a href="https://delcinaimoveis.com.br/" target="_blank" style="background-image: linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url('../images/ProjectDA.jpeg'); background-position: center; background-size: cover;">
+                            <div data-anime>
+                                <h2>DELCINA</h2>
+                                <p>PROJECT</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://goldencatalisadores.com.br/" target="_blank" style="background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url('../images/ProjectGC.jpeg'); background-position: center; background-size: cover;">
+                            <div data-anime>
+                                <h2 style="font-size: 40px;">GOLDEN</h2>
+                                <p>PROJECT</p>
+                            </div>
+                        </a>
+                        
+                        <a href="https://coffee-shop-omega-gold.vercel.app/" target="_blank" style="background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url('../images/ProjectCS.jpeg'); background-position: center; background-size: cover;">
+                            <div data-anime >
+                                <h2>COFFEE</h2>
+                                <p>PROJECT</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide banner-5" id="tech">
+                <div class="menu-banner-5"><img src="./images/CrowLogoBanner.png" alt=""></div>
+
+                <div class="crow-banner-5">
+                    <div class="crow-content-5">
+                        <div data-anime>
+                            <div><img src="./images/html.png" alt=""></div>
+                            <div><img src="./images/css.png" alt=""></div>
+                            <div><img src="./images/js.png" alt=""></div>
+                            <div><img src="./images/figma.png" alt=""></div>
+                        </div>
+                        <div><button>TODAS TECNOLOGIAS</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide banner-4" id="contact">
+                <div class="menu-banner-4"><img src="./images/CrowLogoBanner.png" alt=""></div>
+                <div class="crow-banner-4">
+                    <div class="crow-content-4">
+                        <div class="contact-text" data-anime>
+                            <h2>CONTATO</h2>
+                            <div><img src="./images/icons/CrowIconPhone.png" alt=""><a href="https://api.whatsapp.com/send?phone=+5511983959670&text=Olá,%20CROW!%20quero%20um%20site"><p>+55 ( 11 ) 98395-9670</p></a></div>
+                            <div><img src="./images/icons/CrowIconEmail.png" alt=""><a href="mailto:crow@gmail.com"><p>guilhermemillerblack@gmail.com</p></a></div>
+                            <div class="contact-icons"><a href=""><img src="./images/icons/CrowInstaIcon.png" alt=""></a></div>
+                        </div>
+                        <div class="contact-form" data-anime>
+                            <img src="./images/CrowLogoHeader.png" alt="">
+                            <form>
+                                <div>
+                                    <label for="name">NOME</label>
+                                    <input type="text" name="name" id="name">
+                                </div>
+                                <div>
+                                    <label for="email">E-MAIL</label>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                                <div>
+                                    <label for="number">CELULAR</label>
+                                    <input type="number" name="number" id="number">
+                                </div>
+                                <div>
+                                    <label for="message">MENSAGEM</label>
+                                    <textarea name="message" id="message"></textarea>
+                                </div>
+                                <button>ENVIAR</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+          // Initialize Swiper
+          const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+        });
+
+        // Add click event to buttons
+        document.querySelectorAll('.pagination-container button').forEach((button, index) => {
+            button.addEventListener('click', () => {
+                swiper.slideTo(index + 1); // slideTo index is 0-based
+            });
+        });
+
+        function toggleMenu() {
+            const linksLeft = document.querySelector('.menu-links.left');
+            const linksRight = document.querySelector('.menu-links.right');
+            linksLeft.classList.toggle('active');
+            linksRight.classList.toggle('active');
+        }
+
+        // Intersection Observer for animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                } else {
+                    entry.target.classList.remove('animate'); // Remove animation class when out of view
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('[data-anime]').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Swiper event to handle animation
+        swiper.on('slideChange', function () {
+            document.querySelectorAll('.swiper-slide').forEach(slide => {
+                const elements = slide.querySelectorAll('[data-anime]');
+                elements.forEach(element => {
+                    if (element.classList.contains('animate')) {
+                        observer.unobserve(element); // Unobserve elements that have already animated
+                    }
+                    observer.observe(element); // Reobserve for animation
+                });
+            });
+        });
+
+         // Open menu automatically on page load
+         window.addEventListener('DOMContentLoaded', (event) => {
+            toggleMenu();
+        });
+    </script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
