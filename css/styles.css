@@ -102,7 +102,6 @@ body, html {
 }
 
 .menu-link {
-    background-color: var(--color-black);
     color: var(--color-white);
     padding: 10px 20px;
     text-decoration: none;
@@ -120,18 +119,15 @@ body, html {
     transform: translateX(160%) scaleX(1);
 }
 
-
-@media (max-width: 769px){
-    .menu-links.active.left {
-        transform: translateX(-140%) scaleX(1);
-    }
-    
-    .menu-links.active.right {
-        opacity: 1;
-        transform: translateX(140%) scaleX(1);
-    }
+.menu-icon{
+    display: none;
 }
 
+.menu-link img{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
 
 .crow-banner{
     display: flex;
@@ -168,6 +164,70 @@ body, html {
     transform: scale(1.1);
 }
 
+
+@media (max-width: 769px){
+    .menu-links.active.left {
+        transform: translateX(-145%) scaleX(1);
+    }
+    
+    .menu-links.active.right {
+        opacity: 1;
+        transform: translateX(145%) scaleX(1);
+    }
+
+    .menu-text{
+        display: none;
+    }
+
+    
+    .menu-icon{
+        display: flex;
+    }
+
+    .menu-link{
+        padding: 10px 15px;
+    }
+
+    .menu-link img{
+        display: flex;
+    }
+    
+    .crow-banner{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 426px){
+    .pagination-container{
+        position: absolute;
+        top: 85%;
+        bottom: 0;
+        display: flex;
+    }
+}
+
+@media (max-width: 376px){
+    .menu-link{
+        padding: 10px 10px;
+    }
+
+    .menu-links.active.left {
+        transform: translateX(-147%) scaleX(1);
+    }
+    
+    .menu-links.active.right {
+        opacity: 1;
+        transform: translateX(147%) scaleX(1);
+    }
+}
+
+
+@media (max-width: 321px){
+    .menu-link img{
+        width: 24px;
+        height: 24px;
+    }
+}
 
 .banner-2{
     background-color: var(--color-black);
@@ -218,7 +278,37 @@ body, html {
 }
 
 
-.banner-3{
+@media (max-width: 426px){
+    .crow-content-2{
+        margin: 0;
+    }
+    .crow-banner-2 p{
+        font-size: 11px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 376px){
+    .crow-banner-2 p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 321px){
+
+    .crow-banner-2 img{
+        width: 170px;
+        height: 170px;
+        object-fit: cover;
+    }
+
+    .crow-banner-2 p{
+        font-size: 8px;
+    }
+}
+
+
+.banner-3 {
     background-color: var(--color-black);
     display: flex;
     align-items: center;
@@ -226,15 +316,14 @@ body, html {
     height: 100vh;
 }
 
-.menu-banner-3 img{
+.menu-banner-3 img {
     width: 145px;
     height: 95px;
     object-fit: cover;
     margin: 10px 0 0 56px;
 }
 
-
-.crow-banner-3{
+.crow-banner-3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,25 +331,26 @@ body, html {
     margin-top: 30px;
 }
 
-.crow-content-3{
+.crow-content-3 {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1193px;
     width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
     flex-wrap: wrap;
 }
 
-
-.crow-content-3 a{
-    width: 409px;
-    height: 424px;
+.crow-content-3 a {
+    width: calc((100% - 72px) / 3); /* Calcula dinamicamente a largura dos cards com espaço entre eles */
+    height: 424px; /* Altura fixa dos cards */
     background-color: var(--color-white);
-    margin: 12px;
+    margin: 12px; /* Espaçamento entre os cards */
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-white);
+    color: var(--color-black);
     text-align: center;
     flex-direction: column;
     cursor: pointer;
@@ -272,22 +362,109 @@ body, html {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Ajustes específicos para os primeiros e terceiros cards */
 .crow-content-3 a:nth-child(1),
 .crow-content-3 a:nth-child(3) {
-    width: 351px;
-    height: 374px;
-    margin-top: 58px;
+    width: calc((100% - 72px) / 3); /* Ajuste de largura */
+    height: 374px; /* Altura específica para o primeiro e terceiro card */
+    margin-top: 58px; /* Margem superior ajustada */
 }
 
-.crow-content-3 div h2{
+.crow-content-3 div h2 {
     font-size: 35px;
     font-weight: bold;
+    color: var(--color-white);
 }
 
-.crow-content-3 div p{
+.crow-content-3 div p {
     font-size: 15px;
     font-weight: 500;
+    color: var(--color-white);
+}
+
+/* Ajustes para telas médias */
+@media (max-width: 1200px) {
+    .crow-content-3 a {
+        width: 300px;
+        height: 320px;
+        margin: 10px 10px;
+    }
+    .crow-content-3 a:nth-child(1),
+    .crow-content-3 a:nth-child(3) {
+        width: 280px;
+        height: 300px;
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 769px) {
+    .crow-content-3{
+        margin-top: 0;
+    }
+
+    .crow-content-3 a {
+        width: 200px;
+        height: 220px;
+    }
+    .crow-content-3 a:nth-child(1),
+    .crow-content-3 a:nth-child(3) {
+        width: 180px;
+        height: 200px;
+    }
+
+    .crow-content-3 div h2 {
+        font-size: 30px;
+        font-weight: bold;
+        color: var(--color-white);
+    }
+    
+    .crow-content-3 div p {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--color-white);
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    .crow-content-3 a {
+        width: 140px;
+        height: 160px;
+    }
+    .crow-content-3 a:nth-child(1),
+    .crow-content-3 a:nth-child(3) {
+        width: 140px;
+        height: 160px;
+        margin-top: 5px;
+    }
+    .crow-content-3 div h2 {
+        font-size: 23px;
+        font-weight: bold;
+        color: var(--color-white);
+    }
+    
+    .crow-content-3 div p {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--color-white);
+    }
+}
+
+@media (max-width: 376px){
+    .crow-content-3 div h2 {
+        font-size: 20px;
+    }
+    
+    .crow-content-3 div p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 321px){
+    .crow-content-3 a {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .banner-4{
@@ -312,6 +489,7 @@ body, html {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+    flex-wrap: wrap; /* Permite quebra de linha quando necessário */
 }
 
 .crow-content-4{
@@ -434,6 +612,30 @@ form button:hover{
 }
 
 
+/* Ajustes para telas pequenas */
+@media (max-width: 769px) {
+    .contact-form{
+        display: none;
+    }
+
+    .contact-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 0 200px 0;
+    }
+
+    .contact-text div{
+        margin: 15px 0;
+    }
+
+    .contact-text h2{
+        margin: 15px;
+    }
+}
+
 .banner-5{
     background-color: var(--color-black);
     display: flex;
@@ -455,6 +657,8 @@ form button:hover{
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    max-width: 1500px;
+    width: 100%;
 }
 
 
@@ -470,12 +674,13 @@ form button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 
 .crow-content-5 div img{
-    width: 300px;
-    height: 370px;
+    width: 260px;
+    height: 330px;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
@@ -500,6 +705,50 @@ form button:hover{
     color: var(--color-black);
     cursor: pointer;
 }
+
+/* Ajustes para telas médias */
+@media (max-width: 1200px) {
+    .crow-content-5 div img {
+        width: 200px;
+        height: 250px;
+        margin: 15px 15px;
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 769px) {
+    .crow-content-5 div img {
+        width: 150px;
+        height: 200px;
+        margin: 10px 10px;
+    }
+
+    .crow-content-5 button {
+        padding: 12px 25px;
+        font-size: 12px;
+        margin-top: 30px;
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 480px) {
+    .crow-content-5 div img {
+        width: 120px;
+        height: 160px;
+        margin: 5px 5px;
+    }
+
+    .crow-content-5 button {
+        padding: 10px 20px;
+        font-size: 11px;
+        margin-top: 20px;
+    }
+
+    .crow-content-5{
+        margin-top: 10px;
+    }
+}
+
 
 
 /* Intersection Observer Animations */
