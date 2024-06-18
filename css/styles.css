@@ -722,26 +722,14 @@ form button:hover{
         height: 200px;
         margin: 10px 10px;
     }
-
-    .crow-content-5 button {
-        padding: 12px 25px;
-        font-size: 12px;
-        margin-top: 30px;
-    }
 }
 
 /* Ajustes para telas muito pequenas */
 @media (max-width: 480px) {
     .crow-content-5 div img {
-        width: 120px;
-        height: 160px;
+        width: 140px;
+        height: 180px;
         margin: 5px 5px;
-    }
-
-    .crow-content-5 button {
-        padding: 10px 20px;
-        font-size: 11px;
-        margin-top: 20px;
     }
 
     .crow-content-5{
