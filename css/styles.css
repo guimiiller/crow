@@ -428,13 +428,13 @@ body, html {
 /* Ajustes para telas muito pequenas */
 @media (max-width: 480px) {
     .crow-content-3 a {
-        width: 160px;
-        height: 180px;
+        width: 140px;
+        height: 160px;
     }
     .crow-content-3 a:nth-child(1),
     .crow-content-3 a:nth-child(3) {
-        width: 160px;
-        height: 180px;
+        width: 140px;
+        height: 160px;
         margin-top: 10px;
     }
     .crow-content-3 div h2 {
@@ -462,8 +462,13 @@ body, html {
 
 @media (max-width: 321px){
     .crow-content-3 a {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
+    }
+    .crow-content-3 a:nth-child(1),
+    .crow-content-3 a:nth-child(3) {
+        width: 120px;
+        height: 120px;
     }
 }
 
