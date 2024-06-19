@@ -428,14 +428,14 @@ body, html {
 /* Ajustes para telas muito pequenas */
 @media (max-width: 480px) {
     .crow-content-3 a {
-        width: 140px;
-        height: 160px;
+        width: 160px;
+        height: 180px;
     }
     .crow-content-3 a:nth-child(1),
     .crow-content-3 a:nth-child(3) {
-        width: 140px;
-        height: 160px;
-        margin-top: 5px;
+        width: 160px;
+        height: 180px;
+        margin-top: 10px;
     }
     .crow-content-3 div h2 {
         font-size: 23px;
@@ -624,7 +624,7 @@ form button:hover{
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        margin: 0 0 200px 0;
+        margin: 0 0 250px 0;
     }
 
     .contact-text div{
@@ -727,8 +727,8 @@ form button:hover{
 /* Ajustes para telas muito pequenas */
 @media (max-width: 480px) {
     .crow-content-5 div img {
-        width: 140px;
-        height: 180px;
+        width: 150px;
+        height: 190px;
         margin: 5px 5px;
     }
 
