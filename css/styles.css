@@ -133,13 +133,14 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
+    height: 100%;
 }
 
 .crow-banner img{
     width: 220px;
     height: 220px;
     object-fit: cover;
+    margin-bottom: 200px;
 }
 
 .crow-banner-icons {
@@ -190,10 +191,6 @@ body, html {
 
     .menu-link img{
         display: flex;
-    }
-    
-    .crow-banner{
-        margin-top: 100px;
     }
 }
 
@@ -469,6 +466,10 @@ body, html {
     .crow-content-3 a:nth-child(3) {
         width: 120px;
         height: 120px;
+    }
+    
+    .crow-content-3{
+        margin-top: 30px;
     }
 }
 
