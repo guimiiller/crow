@@ -58,7 +58,6 @@ body, html {
 }
 
 .banner-1 {
-    background-color: var(--color-black);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,10 +65,15 @@ body, html {
 }
 
 .menu-container {
-    position: relative;
+    position: absolute; /* Use fixed if you want it to stay at the top even when scrolling */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
+    background: transparent;
+    padding: 10px 0; /* Adjust as needed */
 }
 
 .menu-button img {
@@ -111,12 +115,12 @@ body, html {
 
 .menu-links.active.left {
     opacity: 1;
-    transform: translateX(-160%) scaleX(1);
+    transform: translateX(-130%) scaleX(1);
 }
 
 .menu-links.active.right {
     opacity: 1;
-    transform: translateX(160%) scaleX(1);
+    transform: translateX(130%) scaleX(1);
 }
 
 .menu-icon{
@@ -133,14 +137,21 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url('../images/BG1.jpg'); background-position: top; background-size: cover;
 }
 
-.crow-banner img{
+.crow-logo-text{
     width: 220px;
-    height: 220px;
+    height: 60px;
     object-fit: cover;
-    margin-bottom: 200px;
+}
+
+.crow-logo-img{
+    width: 180px;
+    height: 95px;
+    object-fit: cover;
 }
 
 .crow-banner-icons {
@@ -306,7 +317,7 @@ body, html {
 
 
 .banner-3 {
-    background-color: var(--color-black);
+    background-image: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url('../images/BG2.jpg'); background-position: top; background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,6 +363,7 @@ body, html {
     flex-direction: column;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #212529;
 }
 
 .crow-content-3 a:hover {
@@ -369,7 +381,6 @@ body, html {
 
 .crow-content-3 div h2 {
     font-size: 35px;
-    font-weight: bold;
     color: var(--color-white);
 }
 
@@ -642,7 +653,7 @@ form button:hover{
     }
 }
 
-.banner-5{
+.banner-5 {
     background-color: var(--color-black);
     display: flex;
     align-items: center;
@@ -650,96 +661,147 @@ form button:hover{
     height: 100vh;
 }
 
-.menu-banner-5 img{
+.menu-banner-5 img {
     width: 145px;
     height: 95px;
     object-fit: cover;
     margin: 10px 0 0 56px;
 }
 
-.crow-banner-5{
+.crow-banner-5 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-width: 1500px;
-    width: 100%;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha */
+    max-width: 100%; /* Largura máxima ocupando todo o espaço disponível */
+    padding: 20px; /* Espaçamento interno */
 }
 
-
-.crow-content-5{
+.crow-content-5 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 110px;
+    flex-wrap: wrap; /* Permite que os cards quebrem linha */
+    gap: 20px; /* Espaçamento entre os cards */
 }
 
-.crow-content-5 div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-
-.crow-content-5 div img{
-    width: 260px;
-    height: 330px;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    margin: 0 30px;
-}
-
-.crow-content-5 button{
-    background: transparent;
-    color: var(--color-white);
-    font-weight: bold;
-    letter-spacing: 1px;
-    border: none;
+.crow-content-5 div {
+    width: calc((100% - 40px) / 2); /* Cards ocupando metade da largura disponível com margens */
+    max-width: calc((100% - 40px) / 2); /* Largura máxima ocupando metade do container pai com margens */
+    height: 300px; /* Altura fixa para os cards */
+    margin-bottom: 20px; /* Espaçamento inferior entre os cards */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o conteúdo dentro do card */
     border: 1px solid #212529;
-    padding: 17px 35px;
-    transition: .3s;
-    font-size: 13px;
-    margin-top: 50px;
 }
 
-.crow-content-5 button:hover{
-    background-color: #212529;
-    color: var(--color-black);
-    cursor: pointer;
+.crow-content-5 h2 {
+    color: #fff;
+    font-size: 15px; /* Tamanho da fonte para o título */
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaçamento inferior para o título */
 }
 
-/* Ajustes para telas médias */
-@media (max-width: 1200px) {
-    .crow-content-5 div img {
-        width: 200px;
-        height: 250px;
-        margin: 15px 15px;
+.crow-content-5 p {
+    color: #8d8f91;
+    font-size: 12px; /* Tamanho da fonte para o texto */
+    text-align: center;
+    margin-top: 10px; /* Espaçamento superior entre o texto e o título */
+    margin-bottom: 10px; /* Espaçamento inferior entre o texto e o título */
+    text-transform: uppercase;
+}
+
+.crow-content-5 img {
+    width: 50px; /* Tamanho do ícone */
+    height: 50px;
+    margin: 20px 0; /* Espaçamento superior e inferior */
+}
+
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+    .crow-content-5 div {
+        width: calc(50% - 20px); /* Cards ocupando metade da largura disponível com margens reduzidas */
+        max-width: calc(50% - 20px); /* Largura máxima ocupando metade do container pai com margens reduzidas */
+        height: 200px; /* Redução da altura dos cards */
+        padding: 15px; /* Espaçamento interno reduzido */
+    }
+
+    .crow-content-5 h2 {
+        font-size: 14px; /* Redução do tamanho da fonte para o título */
+    }
+
+    .crow-content-5 p {
+        font-size: 11px; /* Redução do tamanho da fonte para o texto */
+        margin-top: 5px; /* Espaçamento superior reduzido */
+        margin-bottom: 5px; /* Espaçamento inferior reduzido */
+    }
+
+    .crow-content-5 img {
+        width: 40px; /* Redução do tamanho do ícone */
+        height: 40px;
+        margin: 15px 0; /* Espaçamento superior e inferior reduzido */
     }
 }
 
-/* Ajustes para telas pequenas */
-@media (max-width: 769px) {
-    .crow-content-5 div img {
-        width: 150px;
-        height: 200px;
-        margin: 10px 10px;
+/* Media query para telas menores que 576px */
+@media (max-width: 576px) {
+    .crow-content-5 div {
+        width: calc(50% - 20px); /* Cards ocupando toda a largura disponível com margens reduzidas */
+        max-width: calc(100% - 20px); /* Largura máxima ocupando toda a largura do container pai com margens reduzidas */
+        height: 180px; /* Redução adicional da altura dos cards */
+        padding: 10px; /* Espaçamento interno ainda mais reduzido */
+    }
+
+    .crow-content-5 h2 {
+        font-size: 13px; /* Redução adicional do tamanho da fonte para o título */
+    }
+
+    .crow-content-5 p {
+        font-size: 10px; /* Redução adicional do tamanho da fonte para o texto */
+    }
+
+    .crow-content-5 img {
+        width: 30px; /* Redução adicional do tamanho do ícone */
+        height: 30px;
+        margin: 10px 0; /* Espaçamento superior e inferior ainda mais reduzido */
     }
 }
 
-/* Ajustes para telas muito pequenas */
-@media (max-width: 480px) {
-    .crow-content-5 div img {
-        width: 150px;
-        height: 190px;
-        margin: 5px 5px;
+/* Media query para telas menores que 376px */
+@media (max-width: 376px) {
+    .crow-content-5 div {
+        height: 170px; /* Redução adicional da altura dos cards */
+        padding: 8px; /* Espaçamento interno ainda mais reduzido */
     }
 
-    .crow-content-5{
-        margin-top: 10px;
+    .crow-content-5 h2 {
+        font-size: 12px; /* Redução adicional do tamanho da fonte para o título */
+    }
+
+    .crow-content-5 p {
+        font-size: 9px; /* Redução adicional do tamanho da fonte para o texto */
+    }
+
+    .crow-content-5 img {
+        width: 40px; /* Redução adicional do tamanho do ícone */
+        height: 40px;
+        margin: 8px 0; /* Espaçamento superior e inferior ainda mais reduzido */
+    }
+}
+
+/* Media query para telas menores que 321px */
+@media (max-width: 321px) {
+    .crow-content-5 div {
+        height: 150px; /* Redução adicional da altura dos cards */
+        padding: 5px; /* Espaçamento interno ainda mais reduzido */
+    }
+
+    .crow-content-5 h2 {
+        font-size: 11px; /* Redução adicional do tamanho da fonte para o título */
+    }
+
+    .crow-content-5 p {
+        font-size: 8px; /* Redução adicional do tamanho da fonte para o texto */
     }
 }
 
