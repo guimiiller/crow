@@ -683,13 +683,12 @@ form button:hover{
     justify-content: center;
     flex-wrap: wrap; /* Permite que os cards quebrem linha */
     gap: 20px; /* Espaçamento entre os cards */
+    margin-top: 50px;
 }
 
 .crow-content-5 div {
-    width: calc((100% - 40px) / 2); /* Cards ocupando metade da largura disponível com margens */
-    max-width: calc((100% - 40px) / 2); /* Largura máxima ocupando metade do container pai com margens */
-    height: 300px; /* Altura fixa para os cards */
-    margin-bottom: 20px; /* Espaçamento inferior entre os cards */
+    width: 300px;
+    height: 400px; /* Altura fixa para os cards */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o conteúdo dentro do card */
     border: 1px solid #212529;
@@ -704,21 +703,23 @@ form button:hover{
 
 .crow-content-5 p {
     color: #8d8f91;
-    font-size: 12px; /* Tamanho da fonte para o texto */
+    font-size: 14px; /* Tamanho da fonte para o texto */
     text-align: center;
-    margin-top: 10px; /* Espaçamento superior entre o texto e o título */
-    margin-bottom: 10px; /* Espaçamento inferior entre o texto e o título */
+    margin-top: 50px; /* Espaçamento superior entre o texto e o título */
     text-transform: uppercase;
 }
 
 .crow-content-5 img {
-    width: 50px; /* Tamanho do ícone */
-    height: 50px;
-    margin: 20px 0; /* Espaçamento superior e inferior */
+    width: 70px; /* Tamanho do ícone */
+    height: 70px;
+    margin: 50px 0 50px 0; /* Espaçamento superior e inferior */
 }
 
 /* Media query para telas menores que 768px */
 @media (max-width: 768px) {
+    .crow-content-5{
+        margin: 0;
+    }
     .crow-content-5 div {
         width: calc(50% - 20px); /* Cards ocupando metade da largura disponível com margens reduzidas */
         max-width: calc(50% - 20px); /* Largura máxima ocupando metade do container pai com margens reduzidas */
