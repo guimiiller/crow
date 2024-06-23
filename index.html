@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+        emailjs.init("Tv4Z-FHBebrHiV_oi"); // Substitua pelo seu User ID do EmailJS
+    })();
+    </script>
     <title>CROW | DESIGN E TECNOLOGIA</title>
 </head>
 <body>
@@ -93,7 +99,7 @@
                         </div>
                         <div class="contact-form" data-anime>
                             <img src="./images/CrowLogoHeader.png" alt="">
-                            <form>
+                            <form id="contact-form">
                                 <div>
                                     <label for="name">NOME</label>
                                     <input type="text" name="name" id="name">
@@ -110,7 +116,7 @@
                                     <label for="message">MENSAGEM</label>
                                     <textarea name="message" id="message"></textarea>
                                 </div>
-                                <button>ENVIAR</button>
+                                <button type="button" onclick="sendEmail()">ENVIAR</button>
                             </form>
                         </div>
                     </div>
@@ -175,6 +181,27 @@
          window.addEventListener('DOMContentLoaded', (event) => {
             toggleMenu();
         });
+
+        function sendEmail() {
+            const form = document.getElementById('contact-form');
+
+            const templateParams = {
+                to_name: 'CROW', // Você pode alterar isso para o nome que deseja no seu template
+                from_name: form.name.value,
+                from_email: form.email.value,
+                phone_number: form.number.value,
+                message: form.message.value
+            };
+
+            emailjs.send('service_0gg6grd', 'template_jwht4dt', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Email enviado com sucesso!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Ocorreu um erro ao enviar o email.');
+                });
+        }
     </script>
     <script src="./js/script.js"></script>
 </body>
