@@ -342,6 +342,7 @@ body, html {
     justify-content: center;
     flex-direction: column;
     margin-top: 30px;
+    height: 100vh;
 }
 
 .crow-content-3 {
@@ -353,6 +354,8 @@ body, html {
     margin: 0 auto;
     padding: 0 20px;
     flex-wrap: wrap;
+    
+    margin-bottom: 230px;
 }
 
 .crow-content-3 a {
@@ -740,7 +743,8 @@ form button:hover{
     justify-content: center;
     flex-wrap: wrap; /* Permite que os cards quebrem linha */
     max-width: 100%; /* Largura máxima ocupando todo o espaço disponível */
-    padding: 20px; /* Espaçamento interno */
+    padding: 0 20px; /* Espaçamento interno */
+    height: 100vh;
 }
 
 .crow-content-5 {
@@ -750,6 +754,7 @@ form button:hover{
     flex-wrap: wrap; /* Permite que os cards quebrem linha */
     gap: 20px; /* Espaçamento entre os cards */
     margin-top: 50px;
+    margin-bottom: 250px;
 }
 
 .crow-content-5 div {
@@ -786,8 +791,8 @@ form button:hover{
 
 /* Media query para telas menores que 768px */
 @media (max-width: 768px) {
-    .crow-content-5{
-        margin: 0;
+    .crow-content-5{   
+        margin-bottom: 300px;
     }
     .crow-content-5 div {
         width: calc(50% - 20px); /* Cards ocupando metade da largura disponível com margens reduzidas */
@@ -810,6 +815,9 @@ form button:hover{
         width: 50px; /* Redução do tamanho do ícone */
         height: 50px;
         margin: 15px 0; /* Espaçamento superior e inferior reduzido */
+    }
+    .menu-banner-5{
+        height: 70px;
     }
 }
 
@@ -850,7 +858,7 @@ form button:hover{
     .crow-content-5 div {
         width: calc(52% - 20px); /* Cards ocupando toda a largura disponível com margens reduzidas */
         max-width: calc(100% - 20px); /* Largura máxima ocupando toda a largura do container pai com margens reduzidas */
-        height: 185px; /* Redução adicional da altura dos cards */
+        height: 190px; /* Redução adicional da altura dos cards */
         padding: 8px; /* Espaçamento interno ainda mais reduzido */
     }
 
