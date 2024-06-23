@@ -368,9 +368,11 @@ body, html {
     flex-direction: column;
     cursor: pointer;
     border: 2px solid #212529;
+    transition: transform .3s;
 }
-
-
+.crow-content-3 a:hover{
+    transform: scale(1.05);
+}
 
 /* Ajustes específicos para os primeiros e terceiros cards */
 .crow-content-3 a:nth-child(1),
@@ -390,6 +392,9 @@ body, html {
     font-weight: 500;
     color: var(--color-white);
 }
+
+
+
 
 /* Ajustes para telas médias */
 @media (max-width: 1200px) {
