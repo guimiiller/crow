@@ -850,7 +850,7 @@ form button:hover{
     .crow-content-5 div {
         width: calc(52% - 20px); /* Cards ocupando toda a largura disponível com margens reduzidas */
         max-width: calc(100% - 20px); /* Largura máxima ocupando toda a largura do container pai com margens reduzidas */
-        height: 175px; /* Redução adicional da altura dos cards */
+        height: 190px; /* Redução adicional da altura dos cards */
         padding: 8px; /* Espaçamento interno ainda mais reduzido */
     }
 
@@ -873,7 +873,7 @@ form button:hover{
 /* Media query para telas menores que 321px */
 @media (max-width: 321px) {
     .crow-content-5 div {
-        height: 180px; /* Redução adicional da altura dos cards */
+        height: 185px; /* Redução adicional da altura dos cards */
         padding: 5px 0; /* Espaçamento interno ainda mais reduzido */
         margin-top: 20px;
     }
