@@ -238,7 +238,7 @@ body, html {
 }
 
 .banner-2{
-    background-color: var(--color-black);
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('../images/Default_black_background_tech_lines_all_black_blacker_few_line_2.jpg'); background-position: top; background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,14 +265,14 @@ body, html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     margin-top: 30px;
 }
 
 .crow-banner-2 img{
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 185px;
     object-fit: cover;
 }
 
@@ -280,9 +280,8 @@ body, html {
     color: var(--color-white);
     font-size: 12px;
     text-align: center;
-    line-height: 21px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    line-height: 23px;
+    letter-spacing: 2px;
 }
 
 
@@ -292,7 +291,13 @@ body, html {
     }
     .crow-banner-2 p{
         font-size: 11px;
-        padding: 0 20px;
+        padding: 0 10px;
+    }
+
+    .menu-banner-2 img{
+        width: 130px;
+        height: 85px;
+        margin-left: 30px;
     }
 }
 
@@ -317,7 +322,7 @@ body, html {
 
 
 .banner-3 {
-    background-image: linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.40)), url('../images/BG2.jpg'); background-position: top; background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75 )), url('../images/Default_black_backgroundTech_Lines_All_Black_More_Black_Few_Li_2.jpg'); background-position: top; background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -362,14 +367,10 @@ body, html {
     text-align: center;
     flex-direction: column;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #212529;
+    border: 2px solid #212529;
 }
 
-.crow-content-3 a:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+
 
 /* Ajustes específicos para os primeiros e terceiros cards */
 .crow-content-3 a:nth-child(1),
@@ -436,13 +437,13 @@ body, html {
 /* Ajustes para telas muito pequenas */
 @media (max-width: 480px) {
     .crow-content-3 a {
-        width: 140px;
-        height: 160px;
+        width: 150px;
+        height: 170px;
     }
     .crow-content-3 a:nth-child(1),
     .crow-content-3 a:nth-child(3) {
-        width: 140px;
-        height: 160px;
+        width: 150px;
+        height: 170px;
         margin-top: 10px;
     }
     .crow-content-3 div h2 {
@@ -456,9 +457,26 @@ body, html {
         font-weight: 500;
         color: var(--color-white);
     }
+
+    
+    .menu-banner-3 img{
+        width: 130px;
+        height: 85px;
+        margin-left: 30px;
+    }
 }
 
 @media (max-width: 376px){
+    .crow-content-3 a {
+        width: 140px;
+        height: 160px;
+    }
+    .crow-content-3 a:nth-child(1),
+    .crow-content-3 a:nth-child(3) {
+        width: 140px;
+        height: 160px;
+        margin-top: 10px;
+    }
     .crow-content-3 div h2 {
         font-size: 20px;
     }
@@ -470,17 +488,18 @@ body, html {
 
 @media (max-width: 321px){
     .crow-content-3 a {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 145px;
     }
     .crow-content-3 a:nth-child(1),
     .crow-content-3 a:nth-child(3) {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 145px;
     }
     
     .crow-content-3{
         margin-top: 30px;
+        padding: 0 10px;
     }
 }
 
@@ -521,6 +540,7 @@ body, html {
     width: 100%;
     margin-bottom: 150px;
     margin-right: 200px;
+    
 }
 
 .contact-text h2{
@@ -653,8 +673,49 @@ form button:hover{
     }
 }
 
+@media (max-width: 426px){
+    
+    .menu-banner-4 img{
+        width: 130px;
+        height: 85px;
+        margin-left: 30px;
+    }
+
+     .contact-text div{
+        margin: 10px 0;
+    }
+
+    .contact-text h2{
+        margin: 20px;
+    }
+
+    .contact-text p{
+        font-size: 15px;
+        margin: 0 10px;
+    }
+}
+
+
+@media (max-width: 376px){
+    
+     .contact-text div{
+        margin: 10px 0;
+    }
+
+    .contact-text h2{
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    .contact-text p{
+        font-size: 13px;
+        margin: 0 10px;
+    }
+}
+
+
 .banner-5 {
-    background-color: var(--color-black);
+    background-image: linear-gradient(rgba(0,0,0,0.80), rgba(0,0,0,0.80)), url('../images/BG2.jpg'); background-position: top; background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -738,8 +799,8 @@ form button:hover{
     }
 
     .crow-content-5 img {
-        width: 40px; /* Redução do tamanho do ícone */
-        height: 40px;
+        width: 50px; /* Redução do tamanho do ícone */
+        height: 50px;
         margin: 15px 0; /* Espaçamento superior e inferior reduzido */
     }
 }
@@ -749,7 +810,7 @@ form button:hover{
     .crow-content-5 div {
         width: calc(50% - 20px); /* Cards ocupando toda a largura disponível com margens reduzidas */
         max-width: calc(100% - 20px); /* Largura máxima ocupando toda a largura do container pai com margens reduzidas */
-        height: 180px; /* Redução adicional da altura dos cards */
+        height: 185px; /* Redução adicional da altura dos cards */
         padding: 10px; /* Espaçamento interno ainda mais reduzido */
     }
 
@@ -762,15 +823,24 @@ form button:hover{
     }
 
     .crow-content-5 img {
-        width: 30px; /* Redução adicional do tamanho do ícone */
-        height: 30px;
+        width: 50px; /* Redução adicional do tamanho do ícone */
+        height: 50px;
         margin: 10px 0; /* Espaçamento superior e inferior ainda mais reduzido */
+    }
+
+    
+    .menu-banner-5 img{
+        width: 130px;
+        height: 85px;
+        margin-left: 30px;
     }
 }
 
 /* Media query para telas menores que 376px */
 @media (max-width: 376px) {
     .crow-content-5 div {
+        width: calc(52% - 20px); /* Cards ocupando toda a largura disponível com margens reduzidas */
+        max-width: calc(100% - 20px); /* Largura máxima ocupando toda a largura do container pai com margens reduzidas */
         height: 170px; /* Redução adicional da altura dos cards */
         padding: 8px; /* Espaçamento interno ainda mais reduzido */
     }
@@ -793,8 +863,9 @@ form button:hover{
 /* Media query para telas menores que 321px */
 @media (max-width: 321px) {
     .crow-content-5 div {
-        height: 150px; /* Redução adicional da altura dos cards */
+        height: 160px; /* Redução adicional da altura dos cards */
         padding: 5px; /* Espaçamento interno ainda mais reduzido */
+        margin-top: 20px;
     }
 
     .crow-content-5 h2 {
@@ -802,7 +873,7 @@ form button:hover{
     }
 
     .crow-content-5 p {
-        font-size: 8px; /* Redução adicional do tamanho da fonte para o texto */
+        font-size: 9px; /* Redução adicional do tamanho da fonte para o texto */
     }
 }
 
