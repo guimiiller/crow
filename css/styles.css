@@ -355,7 +355,7 @@ body, html {
     padding: 0 20px;
     flex-wrap: wrap;
     
-    margin-bottom: 230px;
+    margin-bottom: 250px;
 }
 
 .crow-content-3 a {
@@ -416,7 +416,7 @@ body, html {
 /* Ajustes para telas pequenas */
 @media (max-width: 769px) {
     .crow-content-3{
-        margin-top: 0;
+        margin-bottom: 270px;
     }
 
     .crow-content-3 a {
