@@ -818,7 +818,7 @@ form button:hover{
     .crow-content-5 div {
         width: calc(50% - 20px); /* Cards ocupando toda a largura disponível com margens reduzidas */
         max-width: calc(100% - 20px); /* Largura máxima ocupando toda a largura do container pai com margens reduzidas */
-        height: 200px; /* Redução adicional da altura dos cards */
+        height: 210px; /* Redução adicional da altura dos cards */
         padding: 10px; /* Espaçamento interno ainda mais reduzido */
     }
 
@@ -828,7 +828,7 @@ form button:hover{
 
     .crow-content-5 p {
         font-size: 9px; /* Redução adicional do tamanho da fonte para o texto */
-        line-height: 15px;
+        line-height: 14px;
     }
 
     .crow-content-5 img {
@@ -850,7 +850,7 @@ form button:hover{
     .crow-content-5 div {
         width: calc(52% - 20px); /* Cards ocupando toda a largura disponível com margens reduzidas */
         max-width: calc(100% - 20px); /* Largura máxima ocupando toda a largura do container pai com margens reduzidas */
-        height: 190px; /* Redução adicional da altura dos cards */
+        height: 185px; /* Redução adicional da altura dos cards */
         padding: 8px; /* Espaçamento interno ainda mais reduzido */
     }
 
