@@ -765,14 +765,17 @@ form button:hover{
     font-size: 15px; /* Tamanho da fonte para o título */
     font-weight: bold;
     margin-bottom: 10px; /* Espaçamento inferior para o título */
+    letter-spacing: 1px;
 }
 
 .crow-content-5 p {
     color: #8d8f91;
-    font-size: 14px; /* Tamanho da fonte para o texto */
+    font-size: 13px; /* Tamanho da fonte para o texto */
     text-align: center;
     margin-top: 50px; /* Espaçamento superior entre o texto e o título */
     text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 21px;
 }
 
 .crow-content-5 img {
@@ -815,7 +818,7 @@ form button:hover{
     .crow-content-5 div {
         width: calc(50% - 20px); /* Cards ocupando toda a largura disponível com margens reduzidas */
         max-width: calc(100% - 20px); /* Largura máxima ocupando toda a largura do container pai com margens reduzidas */
-        height: 185px; /* Redução adicional da altura dos cards */
+        height: 195px; /* Redução adicional da altura dos cards */
         padding: 10px; /* Espaçamento interno ainda mais reduzido */
     }
 
@@ -824,7 +827,8 @@ form button:hover{
     }
 
     .crow-content-5 p {
-        font-size: 10px; /* Redução adicional do tamanho da fonte para o texto */
+        font-size: 9px; /* Redução adicional do tamanho da fonte para o texto */
+        line-height: 15px;
     }
 
     .crow-content-5 img {
@@ -855,7 +859,8 @@ form button:hover{
     }
 
     .crow-content-5 p {
-        font-size: 9px; /* Redução adicional do tamanho da fonte para o texto */
+        font-size: 8px; /* Redução adicional do tamanho da fonte para o texto */
+        line-height: 13px;
     }
 
     .crow-content-5 img {
@@ -868,8 +873,8 @@ form button:hover{
 /* Media query para telas menores que 321px */
 @media (max-width: 321px) {
     .crow-content-5 div {
-        height: 160px; /* Redução adicional da altura dos cards */
-        padding: 5px; /* Espaçamento interno ainda mais reduzido */
+        height: 180px; /* Redução adicional da altura dos cards */
+        padding: 5px 0; /* Espaçamento interno ainda mais reduzido */
         margin-top: 20px;
     }
 
@@ -878,7 +883,7 @@ form button:hover{
     }
 
     .crow-content-5 p {
-        font-size: 9px; /* Redução adicional do tamanho da fonte para o texto */
+        line-height: 12px;
     }
 }
 
