@@ -873,7 +873,6 @@ form button:hover{
 /* Media query para telas menores que 321px */
 @media (max-width: 321px) {
     .crow-content-5 div {
-        height: 185px; /* Redução adicional da altura dos cards */
         padding: 5px 0; /* Espaçamento interno ainda mais reduzido */
         margin-top: 20px;
     }
