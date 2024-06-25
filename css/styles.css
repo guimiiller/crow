@@ -206,11 +206,16 @@ body, html {
 }
 
 @media (max-width: 450px){
-    .pagination-container{
-        position: absolute;
-        top: 85%;
-        bottom: 0;
+    .pagination-container {
+        position: fixed;
+        bottom: 30px;
+        top: auto;
+        right: 10%;
+        transform: translateX(50%);
         display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -227,6 +232,9 @@ body, html {
         opacity: 1;
         transform: translateX(147%) scaleX(1);
     }
+    .pagination-container {
+        right: 12%;
+    }
 }
 
 
@@ -234,6 +242,9 @@ body, html {
     .menu-link img{
         width: 24px;
         height: 24px;
+    }
+    .pagination-container {
+        right: 20%;
     }
 }
 
