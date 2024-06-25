@@ -400,6 +400,11 @@ body, html {
     margin-top: 58px; /* Margem superior ajustada */
 }
 
+a div{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .crow-content-3 div h2 {
     font-size: 35px;
     color: var(--color-white);
@@ -414,8 +419,8 @@ body, html {
 
 
 .loading_icon{
-    width: 28px;
-    height: 28px;
+    width: 27px;
+    height: 27px;
 }
 
 /* Ajustes para telas médias */
@@ -491,6 +496,17 @@ body, html {
         height: 85px;
         margin-left: 30px;
     }
+
+        
+    a div{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .loading_icon{
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media (max-width: 376px){
@@ -510,6 +526,11 @@ body, html {
     
     .crow-content-3 div p {
         font-size: 12px;
+    }
+
+    .loading_icon{
+        width: 23px;
+        height: 23px;
     }
 }
 
