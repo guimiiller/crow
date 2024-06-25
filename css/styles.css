@@ -409,8 +409,14 @@ body, html {
     font-size: 15px;
     font-weight: 500;
     color: var(--color-white);
+    margin-bottom: 10px;
 }
 
+
+.loading_icon{
+    width: 28px;
+    height: 28px;
+}
 
 /* Ajustes para telas médias */
 @media (max-width: 1200px) {
