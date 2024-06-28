@@ -273,6 +273,7 @@ body, html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
 }
 
 .crow-content-2{
@@ -282,7 +283,7 @@ body, html {
     flex-direction: column;
     max-width: 600px;
     width: 100%;
-    margin-top: 30px;
+    margin-bottom: 250px;
 }
 
 .crow-banner-2 img{
@@ -301,9 +302,6 @@ body, html {
 
 
 @media (max-width: 426px){
-    .crow-content-2{
-        margin: 0;
-    }
     .crow-banner-2 p{
         font-size: 11px;
         padding: 0 10px;
@@ -317,8 +315,13 @@ body, html {
 }
 
 @media (max-width: 376px){
+    
+    .crow-banner-2 img{
+        width: 180px;
+        height: 175px;
+    }
     .crow-banner-2 p{
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 
@@ -327,7 +330,6 @@ body, html {
     .crow-banner-2 img{
         width: 170px;
         height: 170px;
-        object-fit: cover;
     }
 
     .crow-banner-2 p{
