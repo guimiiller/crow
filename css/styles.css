@@ -625,6 +625,13 @@ a div{
     gap: 30px;
 }
 
+
+.copy p{
+    font-size: 11px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
 .contact-form{
     max-width: 558px;
     width: 100%;
@@ -741,6 +748,10 @@ form button:hover{
         font-size: 15px;
         margin: 0 10px;
     }
+
+    .copy p{
+        font-size: 10px;
+    }
 }
 
 
@@ -758,6 +769,9 @@ form button:hover{
     .contact-text p{
         font-size: 13px;
         margin: 0 10px;
+    }
+    .copy p{
+        font-size: 10px;
     }
 }
 
