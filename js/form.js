@@ -33,32 +33,51 @@ document.addEventListener('DOMContentLoaded', function() {
     landingPageBtn.addEventListener('click', () => showForm('landing'));
     virtualStoreBtn.addEventListener('click', () => showForm('loja'));
 
-    // Função para navegação de formulário (Landing Page)
+    // Função para navegação de formulário com suporte ao teclado (Landing Page)
     function handleFormSteps(form, steps) {
         let currentStep = 0;
         const nextBtns = form.querySelectorAll('.next-btn');
 
         nextBtns.forEach((btn) => {
             btn.addEventListener('click', () => {
-                const input = steps[currentStep].querySelector('input');
-                if (input.value === '') {
-                    alert('Preencha o campo antes de continuar.');
-                } else {
-                    steps[currentStep].classList.add('out');
-                    setTimeout(() => {
-                        steps[currentStep].classList.remove('active', 'out');
-                        steps[currentStep].style.display = 'none';
-                        currentStep++;
-                        if (currentStep < steps.length) {
-                            steps[currentStep].style.display = 'flex';
-                            setTimeout(() => {
-                                steps[currentStep].classList.add('active');
-                            }, 50);
-                        }
-                    }, 500);
+                goToNextStep();
+            });
+        });
+
+        // Manipulador de eventos para o teclado
+        form.querySelectorAll('input').forEach((input) => {
+            input.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    goToNextStep();
                 }
             });
         });
+
+        // Função para ir ao próximo passo
+        function goToNextStep() {
+            const input = steps[currentStep].querySelector('input');
+            if (input && input.value === '') {
+                alert('Preencha o campo antes de continuar.');
+            } else {
+                steps[currentStep].classList.add('out');
+                setTimeout(() => {
+                    steps[currentStep].classList.remove('active', 'out');
+                    steps[currentStep].style.display = 'none';
+                    currentStep++;
+                    if (currentStep < steps.length) {
+                        steps[currentStep].style.display = 'flex';
+                        setTimeout(() => {
+                            steps[currentStep].classList.add('active');
+                            const nextInput = steps[currentStep].querySelector('input');
+                            if (nextInput) {
+                                nextInput.focus();
+                            }
+                        }, 50);
+                    }
+                }, 500);
+            }
+        }
     }
 
     const landingPageSteps = landingPageForm.querySelectorAll('.form-step');
