@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/favicon.ico" type="image/png" sizes="100x100">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Toastify/1.12.0/Toastify.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Toastify/1.12.0/Toastify.min.js"></script>
+
+    <title>CROW | ORÇAMENTO</title>
+    <link rel="stylesheet" href="./css/form.css">
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("YOUR_USER_ID");
+    })();
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="logo" class="logo"><img src="./images/crowLogoForm.svg" alt="Logo CROW"></div>
+        <div id="welcome" class="welcome">Bem-vindo</div>
+
+        <div id="buttons" class="buttons">
+            <button id="landingPageBtn" class="option-btn">Landing Page</button>
+            <button id="virtualStoreBtn" class="option-btn">Loja Virtual</button>
+        </div>
+
+        <div class="form-container" style="display: none;">
+            <!-- Formulário para Landing Pages -->
+            <form id="landingPageForm" class="form" action="https://formspree.io/f/xeojyarb" method="POST">
+                <div class="form-step active">
+                    <input type="text" id="name" name="name" required placeholder="Nome" style="width: 300px;">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <input type="text" name="tellPhone" id="tellPhone" required placeholder="Número de celular">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <input type="text" id="objectives" name="objectives" required placeholder="Objetivos com esse site">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+            
+                <div class="form-step">
+                    <input type="text" id="public" name="public" required placeholder="Quem é o público-alvo principal?">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+            
+                <div class="form-step">
+                    <input type="text" id="design" name="design" required placeholder="Já tem alguma ideia de design?">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+            
+                <div class="form-step">
+                    <input type="text" id="features" name="features" required placeholder="Funcionalidades para o site">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+            
+                <div class="form-step">
+                    <input type="text" id="content" name="content" required placeholder="Você tem algum conteúdo?">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+            
+                <div class="form-step">
+                    <input type="text" id="deadline" name="deadline" required placeholder="Prazo de Lançamento">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+            
+                <div class="form-step">
+                    <input type="text" id="domain" name="domain" required placeholder="Possui domínio e hospedagem?">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <button type="submit" id="submit-btn">Enviar</button>
+                    <p id="success-message" class="success-message">Enviado com sucesso! Vamos retornar com o orçamento em breve.</p>
+                </div>
+            </form>
+
+            <!-- Formulário para Loja Virtual -->
+            <form id="virtualStoreForm" class="form" style="display: none;" action="https://formspree.io/f/mldrqjoz" method="POST">
+                <div class="form-step active">
+                    <input type="text" name="storeName" id="storeName" required placeholder="Nome da Loja" style="width: 270px;">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <input type="text" name="tellPhone" id="tellPhone" required placeholder="Número de celular">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <input type="text" name="marketSegment" id="marketSegment" required placeholder="Segmento de Mercado">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <input type="text" name="productQuantity" id="productQuantity" required placeholder="Quantidade de Produtos">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <input type="text" name="productCategories" id="productCategories" required placeholder="Categorias de Produtos">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <input type="text" name="designIdentity" id="designIdentity" required placeholder="Design/Identidade Visual">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <input type="text" name="paymentMethods" id="paymentMethods" required placeholder="Métodos de Pagamento">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <input type="text" name="shippingIntegration" id="shippingIntegration" required placeholder="Integração com Transportadoras">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <input type="text" name="launchDeadline" id="launchDeadline" required placeholder="Prazo de Lançamento">
+                    <button type="button" class="next-btn"><img src="./images/icons/next.svg" alt=""></button>
+                </div>
+                <div class="form-step">
+                    <button type="submit" id="submit-btn">Enviar</button>
+                    <p id="virtual-store-success-message" class="success-message">Enviado com sucesso! Vamos retornar com o orçamento em breve.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/form.js"></script>
+</body>
+</html>

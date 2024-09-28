@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #010101;
+    color: #4A5158;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+}
+
+.logo, .welcome {
+    font-size: 25px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+.logo {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.welcome {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.form {
+    display: none;
+    margin-top: 50px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.form-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Garante que o botão esteja posicionado corretamente em relação ao campo de entrada */
+    opacity: 0;
+    transform: translateY(50px); /* Mantém o campo levemente deslocado para baixo inicialmente */
+    transition: all 0.5s ease; /* Anima a transição de posição e opacidade */
+    position: absolute; /* Garante que os campos fiquem um sobre o outro */
+    width: 100%; /* Garante que o campo ocupe toda a largura do formulário */
+}
+
+.form-step.active {
+    opacity: 1;
+    transform: translateY(0); /* Campo volta para a posição original com a transição */
+    position: relative; /* Faz com que o campo ativo ocupe seu espaço */
+}
+
+.form-step.out {
+    opacity: 0;
+    transform: translateY(-50px); /* Animação de saída para cima */
+}
+
+input {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #212529;
+    background: transparent;
+    color: #4A5158;
+    outline: none;
+    font-size: 20px;
+    width: 50%;
+    z-index: 5;
+}
+
+input::placeholder {
+    color: #4A5158;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    font-size: 20px;
+}
+
+/* Estilo geral do botão */
+.next-btn {
+    z-index: 1000; /* Garante que o botão esteja acima dos outros campos */
+    position: absolute;
+    top: 150px;
+}
+
+/* Estilo do ícone dentro do botão */
+.next-btn img {
+    width: 24px; /* Ajuste o tamanho do ícone se necessário */
+    height: auto; /* Mantém a proporção do ícone */
+    display: block;
+}
+
+button {
+    background: none;
+    border: none;
+    color: #4A5158;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#submit-btn {
+    background: transparent;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    border: 1px solid #212529;
+    padding: 12px 37px;
+    transition: .3s;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+}
+
+#submit-btn:hover {
+    background-color: #212529;
+    color: #000;
+    cursor: pointer;
+}
+
+.success-message {
+    display: none;
+    margin-top: 50px;
+    color: #4A5158;
+}
+
+.success-message.active {
+    display: block;
+}
+
+
+.buttons {
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.option-btn {
+    background: transparent;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid #212529;
+    padding: 12px 37px;
+    transition: .3s;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #212529;
+    color: #000;
+}
+
+.show {
+    opacity: 1;
+}
+
+@media(max-width: 768px){
+    .container{
+        max-width: 600px;
+    }
+
+    input{
+        font-size: 15px;
+        width: 90%;
+    }
+
+    input::placeholder{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media(max-width: 426px){
+    .container{
+        max-width: 400px;
+    }
+}
+
+@media(max-width: 376px){
+    .container{
+        max-width: 300px;
+    }
+}

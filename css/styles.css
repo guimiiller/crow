@@ -29,6 +29,7 @@ body, html {
     width: 100%;
     height: 100%;
 }
+
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -62,6 +63,26 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh; /* Adjust as needed */
+}
+
+.crow-banner a{
+    background: transparent;
+    color: var(--color-white);
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    border: 1px solid #212529;
+    padding: 12px 37px;
+    transition: .3s;
+    font-size: 13px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.crow-banner a:hover{
+    background-color: #212529;
+    color: var(--color-black);
+    cursor: pointer;
 }
 
 .menu-container {
@@ -152,6 +173,7 @@ body, html {
     width: 180px;
     height: 100px;
     object-fit: cover;
+    margin-top: 50px;
 }
 
 .crow-banner-icons {
