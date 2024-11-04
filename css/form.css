@@ -163,12 +163,39 @@ button {
     font-family: "Orbitron", sans-serif;
     margin: 10px;
     cursor: pointer;
+    position: relative;
 }
 
 .option-btn:hover {
     background-color: #222b31;
     color: #000;
 }
+
+
+.option-btn::after {
+    content: attr(data-tooltip); /* O conteúdo do tooltip será o atributo data-tooltip */
+    position: absolute;
+    bottom: 120%; /* Exibe o tooltip acima do botão */
+    left: 100%;
+    transform: translateX(-50%);
+    background-color: #20272c;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 11px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    line-height: 20px;
+}
+
+.option-btn:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 
 .show {
     opacity: 1;

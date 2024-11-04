@@ -838,7 +838,7 @@ form button:hover{
     height: 400px; /* Altura fixa para os cards */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o conteúdo dentro do card */
-    border: 1px solid #212529;
+    border: 1px solid #222b31;
 }
 
 .crow-content-5 h2 {
@@ -850,7 +850,7 @@ form button:hover{
 }
 
 .crow-content-5 p {
-    color: #8d8f91;
+    color: #a2a3a5;
     font-size: 13px; /* Tamanho da fonte para o texto */
     text-align: center;
     margin-top: 50px; /* Espaçamento superior entre o texto e o título */
