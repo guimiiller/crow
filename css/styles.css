@@ -71,7 +71,7 @@ body, html {
     font-weight: bold;
     letter-spacing: 1px;
     border: none;
-    border: 1px solid #212529;
+    border: 1px solid #222b31;
     padding: 12px 37px;
     transition: .3s;
     font-size: 13px;
@@ -80,7 +80,7 @@ body, html {
 }
 
 .crow-banner a:hover{
-    background-color: #212529;
+    background-color: #222b31;
     color: var(--color-black);
     cursor: pointer;
 }
@@ -700,7 +700,7 @@ form div input,
 form div textarea{
     background: transparent;
     border: none;
-    border-bottom: 1px solid #212529;
+    border-bottom: 1px solid #222b31;
     width: 419px;
     outline: none;
     color: var(--color-white);
@@ -713,14 +713,14 @@ form button{
     font-weight: bold;
     letter-spacing: 1px;
     border: none;
-    border: 1px solid #212529;
+    border: 1px solid #222b31;
     padding: 12px 37px;
     transition: .3s;
     font-size: 13px;
 }
 
 form button:hover{
-    background-color: #212529;
+    background-color: #222b31;
     color: var(--color-black);
     cursor: pointer;
 }
