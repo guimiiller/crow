@@ -94,15 +94,12 @@ input::placeholder {
 /* Estilo geral do botão */
 .next-btn {
     z-index: 1000; /* Garante que o botão esteja acima dos outros campos */
-    position: absolute;
-    top: 150px;
 }
 
 /* Estilo do ícone dentro do botão */
 .next-btn img {
-    width: 24px; /* Ajuste o tamanho do ícone se necessário */
+    width: 35px; /* Ajuste o tamanho do ícone se necessário */
     height: auto; /* Mantém a proporção do ícone */
-    display: block;
 }
 
 button {
@@ -178,7 +175,7 @@ button {
     bottom: 120%; /* Exibe o tooltip acima do botão */
     left: 100%;
     transform: translateX(-50%);
-    background-color: #20272c;
+    border: 1px solid #222b31;
     color: #FFF;
     padding: 5px 10px;
     border-radius: 5px;
