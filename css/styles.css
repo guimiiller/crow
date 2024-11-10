@@ -1142,6 +1142,13 @@ a div{
         margin-top: 30px;
         margin-bottom: 10px;
     }
+
+    .menu-banner-6 img{
+        width: 130px;
+        height: 85px;
+        margin-left: 30px;
+    }
+
 }
 
 @media (max-width: 376px){
