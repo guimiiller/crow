@@ -232,7 +232,7 @@ body, html {
         position: fixed;
         bottom: 30px;
         top: auto;
-        right: 20%;
+        right: 16%;
         transform: translateX(50%);
         display: flex;
         flex-direction: row;
@@ -242,7 +242,9 @@ body, html {
 
     .pagination-container button{
         margin: 0;
+        padding: 10px 17px;
     }
+    
 }
 
 @media (max-width: 376px){
@@ -260,11 +262,6 @@ body, html {
     }
     .pagination-container {
         right: 20%;
-    }
-
-    
-    .pagination-container button{
-        padding: 10px 17px;
     }
 }
 
