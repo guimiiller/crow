@@ -2,6 +2,7 @@
 
 :root {
     --color-black: #000000;
+    --color-charcoal: #222b31;
     --color-white: #FFFFFF;
 }
 
@@ -71,7 +72,7 @@ body, html {
     font-weight: bold;
     letter-spacing: 1px;
     border: none;
-    border: 1px solid #222b31;
+    border: 1px solid var(--color-charcoal);
     padding: 12px 37px;
     transition: .3s;
     font-size: 13px;
@@ -80,7 +81,7 @@ body, html {
 }
 
 .crow-banner a:hover{
-    background-color: #222b31;
+    background-color: var(--color-charcoal);
     color: var(--color-black);
     cursor: pointer;
 }
@@ -703,7 +704,7 @@ form div input,
 form div textarea{
     background: transparent;
     border: none;
-    border-bottom: 1px solid #222b31;
+    border-bottom: 1px solid var(--color-charcoal);
     width: 419px;
     outline: none;
     color: var(--color-white);
@@ -716,14 +717,14 @@ form button{
     font-weight: bold;
     letter-spacing: 1px;
     border: none;
-    border: 1px solid #222b31;
+    border: 1px solid var(--color-charcoal);
     padding: 12px 37px;
     transition: .3s;
     font-size: 13px;
 }
 
 form button:hover{
-    background-color: #222b31;
+    background-color: var(--color-charcoal);
     color: var(--color-black);
     cursor: pointer;
 }
@@ -841,7 +842,7 @@ form button:hover{
     height: 400px; /* Altura fixa para os cards */
     padding: 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o conteúdo dentro do card */
-    border: 1px solid #222b31;
+    border: 1px solid var(--color-charcoal);
 }
 
 .crow-content-5 h2 {
@@ -1021,7 +1022,7 @@ form button:hover{
     text-align: center;
     flex-direction: column;
     cursor: pointer;
-    border: 1px solid #222b31;
+    border: 1px solid var(--color-charcoal);
 }
 
 /* Ajustes específicos para os primeiros e terceiros cards */
@@ -1036,7 +1037,7 @@ form button:hover{
     width: 85px;
     height: 85px;
     border-radius: 50%;
-    border: 1px solid #222b31;
+    border: 1px solid var(--color-charcoal);
     padding: 7px;
     transition: transform .3s;
     object-fit: cover;
