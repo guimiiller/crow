@@ -1,3 +1,10 @@
+const preloader = document.getElementById('preloader');
+
+window.addEventListener('load', () => {
+    preloader.style.display = 'none';
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const formContainer = document.querySelector('.form-container');
     const landingPageBtn = document.getElementById('landingPageBtn');
