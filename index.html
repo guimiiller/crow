@@ -250,21 +250,41 @@
 
         function sendEmail() {
             const form = document.getElementById('contact-form');
+            const name = form.name.value.trim();
+            const email = form.email.value.trim();
+            const number = form.number.value.trim();
+            const message = form.message.value.trim();
+
+            // Verificação dos campos
+            if (!name) {
+                alert('Por favor, preencha o campo de nome.');
+                return;
+            }
+            if (!email) {
+                alert('Por favor, preencha o campo de e-mail.');
+                return;
+            }
+            if (!number) {
+                alert('Por favor, preencha o campo de celular.');
+                return;
+            }
+            if (!message) {
+                alert('Por favor, preencha o campo de mensagem.');
+                return;
+            }
 
             const templateParams = {
-                to_name: 'CROW', // Você pode alterar isso para o nome que deseja no seu template
-                from_name: form.name.value,
-                from_email: form.email.value,
-                phone_number: form.number.value,
-                message: form.message.value
+                to_name: 'CROW',
+                from_name: name,
+                from_email: email,
+                phone_number: number,
+                message: message
             };
 
             emailjs.send('service_0gg6grd', 'template_jwht4dt', templateParams)
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     alert('Email enviado com sucesso!');
-                    
-                    // Limpa os campos do formulário
                     form.reset();
                 }, function(error) {
                     console.log('FAILED...', error);
