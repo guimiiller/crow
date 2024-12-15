@@ -171,11 +171,11 @@ body, html {
 }
 
 .crow-logo-img{
-    width: 77px;
-    height: 77px;
+    width: 68px;
+    height: 68px;
     object-fit: cover;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .crow-banner-icons {
